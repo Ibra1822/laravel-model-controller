@@ -7,10 +7,10 @@
     @foreach ($movies as $movie)
         <div class="card">
             <div>
-              <h2>{{$movie->title}}</h2>
-              <h3>{{$movie->original_title}}</h3>
-              <p>{{$movie->nationality}}</p>
-              <p>{{$movie->date}}</p>
+              <h2> TITLE: {{$movie->title}}</h2>
+              <h3>ORIGINAL TITLE: {{$movie->original_title}}</h3>
+              <p>COUNTRY: {{$movie->nationality}}</p>
+              <p>DATE: {{$movie->date}}</p>
             </div>
         </div>
     @endforeach
