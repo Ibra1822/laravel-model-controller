@@ -24,6 +24,19 @@ class PageController extends Controller
     }
 
 
+    public function details($id){
 
+        //dd($id);
+
+        $singleMovie = Movie::find($id);
+
+        if (is_null($singleMovie)) {
+            abort(404);
+        }
+
+        return view('detail',compact('singleMovie'));
+
+    }
 }
+
 

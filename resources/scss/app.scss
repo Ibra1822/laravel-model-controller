@@ -57,6 +57,10 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px 30px;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
     .card {
         border: 1px solid #fff;
         border-radius: 10px;
@@ -74,6 +78,11 @@ ul {
             text-shadow: 0px 0px 2px #fff;
         }
     }
+}
+.det-card {
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 footer a {

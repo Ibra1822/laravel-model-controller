@@ -18,3 +18,5 @@ Route::get('/',[PageController::class,'index'])->name('home');
 
 Route::get('/top',[PageController::class,'top'])->name('top');
 
+Route::get('/detail/{id}',[PageController::class,'details'])->name('detail');
+

@@ -5,6 +5,7 @@
 
 <div class="cont-cards">
     @foreach ($movies as $movie)
+    <a href="{{route('detail',$movie->id)}}">
         <div class="card">
             <div>
               <h2> TITLE: {{$movie->title}}</h2>
@@ -13,6 +14,7 @@
               <p>DATE: {{$movie->date}}</p>
             </div>
         </div>
+    </a>
     @endforeach
 </div>
 
