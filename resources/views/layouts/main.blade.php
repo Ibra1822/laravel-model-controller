@@ -9,8 +9,8 @@
     <title>Laravel Model Controller</title>
 </head>
 <body>
-
-@yield('content');
-
+@include('partials.header')
+@yield('content')
+@include('partials.footer')
 </body>
 </html>
